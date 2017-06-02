@@ -1,10 +1,16 @@
-import React from 'react';
-import './App.css';
+// React Imports
+import React from 'react'
+import { HashRouter as Router, Route } from 'react-router-dom'
 
-const AppComponent = () => (
-  <div className="App">
-    Hello!
-  </div>
+// Store from react-redux import
+import { Provider } from 'react-redux'
+
+import AppComponent from './components/AppComponent'
+
+const Root = ({ store }) => (
+  <Provider store={store}>
+      <AppComponent />
+  </Provider>
 )
 
-export default AppComponent
+export default Root
