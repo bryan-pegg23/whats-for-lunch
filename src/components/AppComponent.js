@@ -5,9 +5,9 @@ import React from 'react'
 import '../App.css'
 
 // Component Imports
-import FormComponent from './formComponent'
-import MapComponent from './mapComponent'
-import FooterComponent from './footerComponent'
+import FormComponent from './FormComponent'
+import MapComponent from './MapComponent'
+import FooterComponent from './FooterComponent'
 
 const AppComponent = props => (
   <div className='App'>

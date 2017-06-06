@@ -6,5 +6,11 @@ import registerServiceWorker from './registerServiceWorker'
 import Root from './App'
 import './index.css'
 
-ReactDOM.render(<Root />, document.getElementById('root'))
+import configureStore from './configureStore'
+
+const store = configureStore()
+
+console.log(store.getState())
+
+ReactDOM.render(<Root store={store} />, document.getElementById('root'))
 registerServiceWorker()
