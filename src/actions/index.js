@@ -1,5 +1,5 @@
 export const RADIUS = 'RADIUS'
-export const VALUE = 'VALUE'
+export const FILTER_VALUES = 'FILTER_VALUES'
 export const ZOOM = 'ZOOM'
 export const SET_ZIPCODE = 'SET_ZIPCODE'
 export const FILTER_OPTIONS = 'FILTER_OPTIONS'
@@ -15,5 +15,18 @@ export const FINAL_RESULT_CLASS_NAME = 'FINAL_RESULT_CLASS_NAME'
 export const setZipcode = ({ target: { value } }) => {
   return {
     type: SET_ZIPCODE, value
+  }
+}
+
+export const chooseFilteroptions = (value) => {
+  console.log(value)
+  return {
+    type: FILTER_VALUES, value
+  }
+}
+
+export const updateRadius = (value) => {
+  return {
+    type: RADIUS, value
   }
 }
